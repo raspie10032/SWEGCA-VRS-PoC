@@ -45,3 +45,9 @@ Pending. Repository creation and upload are not yet claimed complete by this ini
 - Export archive: 327,680 bytes, SHA-256 1412d8136bbd6fee996b1707ce0ad206308bdf8176fc1a41ac4ec0c0c199a86a. Original private development history is not imported.
 
 Codex inspection error: the first repository-verifier command was issued from `reference/`, where the root-level verifier does not exist. It failed before any write. The command was rerun from the repository root and passed; the separate reference tests had already passed. No failure was treated as a pass. External upload remains pending at this pre-upload checkpoint.
+
+### Initial private upload verified
+
+Created https://github.com/raspie10032/VRS-Judgment-PoC with explicit `--private` and pushed the independent root commit `733271884b4302a7a281fd3c48341791336500c8` to main. GitHub readback confirms private=true, visibility=private, default_branch=main and license=MIT. Local and remote main commit match. The commit API reports tree `17ffdbe11c2a15b0afc7d343e104169e70b5dabf`, matching the local Git tree. Initial snapshot has 41 tracked files. No original development-history parent is imported. No other remote repository or privacy setting was changed, and no arXiv action occurred.
+
+Additional Codex verification errors: a tree endpoint queried by branch returned a top-level SHA unsuitable for the intended local-tree comparison; the commit API's explicit tree SHA supplied the correct comparison instead, without claiming the first values matched. A subsequent read-only recursive-tree query had an unmatched shell quote and did not run; it was corrected. Neither affected uploaded content or privacy. This checkpoint records the verified initial upload; its own follow-up documentation commit is verified separately after push.
