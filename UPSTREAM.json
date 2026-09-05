@@ -1,0 +1,53 @@
+{
+  "files": {
+    "LICENSE": {
+      "bytes": 1069,
+      "sha256": "b2d581a6cd5447685df2df591a04fc975c1bc7cf5194cd35ac005a1a5562b3a2"
+    },
+    "docs/reference-source.tar": {
+      "bytes": 327680,
+      "sha256": "1412d8136bbd6fee996b1707ce0ad206308bdf8176fc1a41ac4ec0c0c199a86a"
+    },
+    "paper/swegca_vrs_persistent_cognition/ARTIFACT_MANIFEST_PUBLIC.json": {
+      "bytes": 6913,
+      "sha256": "bddf0079847d535327ac68e4ef5f90c335e9095b872eeee470132a077e18e571"
+    },
+    "paper/swegca_vrs_persistent_cognition/ARXIV_METADATA.md": {
+      "bytes": 3152,
+      "sha256": "d7335c0fe95649729ec6f256e2c76140d40341e0e29741a29b47bc28d10aade4"
+    },
+    "paper/swegca_vrs_persistent_cognition/BUILD.md": {
+      "bytes": 2827,
+      "sha256": "a49c40b6a7fb98d9e8660bafb7f60ee2f714a6fd6efc775f339e8fa384663c8c"
+    },
+    "paper/swegca_vrs_persistent_cognition/CLAIM_EVIDENCE_MATRIX.md": {
+      "bytes": 11239,
+      "sha256": "b731fca5b5ff3741d4316afff6ea35cc4b800f99baeb8b663e9d21e382cec481"
+    },
+    "paper/swegca_vrs_persistent_cognition/REPRODUCIBILITY.md": {
+      "bytes": 7111,
+      "sha256": "0f2f201f130896a50d0b38e7298d7fa3f213c5aad06e74b6c90095504f99a689"
+    },
+    "paper/swegca_vrs_persistent_cognition/SUBMISSION_CHECKLIST.md": {
+      "bytes": 3965,
+      "sha256": "bb416544c67e38d2fdbc954437cd60c8d5e42fbd74e76e198d7f71adaf1398e0"
+    },
+    "paper/swegca_vrs_persistent_cognition/main.tex": {
+      "bytes": 42357,
+      "sha256": "358545126ea0e3d529425dff411cce2a3542953a5466a6cbc8676d3dc9e1c33c"
+    },
+    "paper/swegca_vrs_persistent_cognition/references.bib": {
+      "bytes": 6488,
+      "sha256": "c207bc38d19e1553c14384aa0e1cfa0e5bf654ea6088c00fc010b759c334823d"
+    },
+    "reference/LINEAGE.json": {
+      "bytes": 7331,
+      "sha256": "c2c4bfc313832d0717b45a13136a484b426ab5422b401cad6d052cd43a5bd1c0"
+    }
+  },
+  "independent_history": true,
+  "license": "MIT for first-party code",
+  "upstream_commit": "9ec73bdda92dfc7dbee168f0828827edea166a0d",
+  "upstream_repository": "https://github.com/raspie10032/tinylm-slicer",
+  "visibility_intent": "PRIVATE"
+}

@@ -1,0 +1,160 @@
+{
+  "empirical_reproduction_complete": false,
+  "excluded_test": "tests/test_mosaic_paper_hot_source_provenance.py::test_integrated_read_only_handler_emits_source_receipts_and_rejects_writes",
+  "exclusion_reason": "Full resident service is outside the component export; not an integration PASS.",
+  "files": {
+    "LICENSE": {
+      "bytes": 1069,
+      "origin": "packaging_scaffold",
+      "sha256": "b2d581a6cd5447685df2df591a04fc975c1bc7cf5194cd35ac005a1a5562b3a2",
+      "upstream_path": null
+    },
+    "README.md": {
+      "bytes": 7126,
+      "origin": "packaging_scaffold",
+      "sha256": "6bc6c643a54b1060c1f11f31579033d939ecf14c82a3d42034686090dc9c73e9",
+      "upstream_path": null
+    },
+    "SPECIALIST_REPRODUCTION.md": {
+      "bytes": 3584,
+      "origin": "packaging_scaffold",
+      "sha256": "cf876afbb9502d885d7628d42e41a84e9209a25812a387f66e2e45429639f511",
+      "upstream_path": null
+    },
+    "analyze_specialist_comparisons.py": {
+      "bytes": 3914,
+      "origin": "packaging_scaffold",
+      "sha256": "ee42899780cc9c427aa9c3437516383d2159e50a794f34c930a2fa43bb2100f9",
+      "upstream_path": null
+    },
+    "pyproject.toml": {
+      "bytes": 638,
+      "origin": "packaging_scaffold",
+      "sha256": "fd69fecfed53a7296c3ab1e9ad90c5483d8984ae90e370736fa1b95278be22ec",
+      "upstream_path": null
+    },
+    "requirements-test.txt": {
+      "bytes": 14,
+      "origin": "packaging_scaffold",
+      "sha256": "93c4ab5f175d24229e46ec70a8ecaeb6db8b36e3f54d8005808044c060acbc92",
+      "upstream_path": null
+    },
+    "specialist_comparisons.json": {
+      "bytes": 14618,
+      "origin": "minimized_historical_receipts_with_source_hashes",
+      "sha256": "0ca07b057a34fabcf1eb4f04e785b91300d657f93ad85bd9bbe9f6f416df294d",
+      "upstream_path": null
+    },
+    "src/tinylm_slicer/__init__.py": {
+      "bytes": 22,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "upstream_path": "src/tinylm_slicer/__init__.py"
+    },
+    "src/tinylm_slicer/mosaic_luna_persistent_conversation.py": {
+      "bytes": 14405,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "e133c7cea5bdfd13e82876aa46bd37839ca99b6c8356ed9766aa314d3bb56ff4",
+      "upstream_path": "src/tinylm_slicer/mosaic_luna_persistent_conversation.py"
+    },
+    "src/tinylm_slicer/mosaic_memory_activation.py": {
+      "bytes": 34773,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "cfccbc2246c1d3099d9a2d8bdd837876c9f5e83600e7643b2340e75d6ddc4715",
+      "upstream_path": "src/tinylm_slicer/mosaic_memory_activation.py"
+    },
+    "src/tinylm_slicer/mosaic_paper_crossing_provenance.py": {
+      "bytes": 5446,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "964b0b4ad2da8c42b5c865d0c23e08a25045b4b8f52916815eca71d6ec3eebd9",
+      "upstream_path": "src/tinylm_slicer/mosaic_paper_crossing_provenance.py"
+    },
+    "src/tinylm_slicer/mosaic_paper_hot_causal_ablation.py": {
+      "bytes": 20393,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "30cbbb8f09052a14235625164003ab3dfa929cb898ffed45b25a7227bf559b4c",
+      "upstream_path": "src/tinylm_slicer/mosaic_paper_hot_causal_ablation.py"
+    },
+    "src/tinylm_slicer/mosaic_paper_hot_source_provenance.py": {
+      "bytes": 12808,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "032cd3b14ee4d44e34c3edda0ff09e64b1bf5c8e1703b920bcabd7dcc4a49018",
+      "upstream_path": "src/tinylm_slicer/mosaic_paper_hot_source_provenance.py"
+    },
+    "tests/test_mosaic_luna_persistent_conversation.py": {
+      "bytes": 3841,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "d9e182fe69426a2e10ac01829ba1b552c900bbaf5baab80a08f0bb950d5b4251",
+      "upstream_path": "tests/test_mosaic_luna_persistent_conversation.py"
+    },
+    "tests/test_mosaic_memory_activation.py": {
+      "bytes": 16779,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "8346ee246c96dd9b332b2c4c98ec47632c9698a71daa828fbff84aa32ac833a5",
+      "upstream_path": "tests/test_mosaic_memory_activation.py"
+    },
+    "tests/test_mosaic_paper_crossing_provenance.py": {
+      "bytes": 3384,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "3cdf49aca821f1dfccb62758aab1e57e064604d0c27f12c823e8a6a71e69824c",
+      "upstream_path": "tests/test_mosaic_paper_crossing_provenance.py"
+    },
+    "tests/test_mosaic_paper_hot_causal_ablation.py": {
+      "bytes": 11345,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "01b0fe6394b0a7168996437c14344379b11ad297f6b12224186bdc61376d1e31",
+      "upstream_path": "tests/test_mosaic_paper_hot_causal_ablation.py"
+    },
+    "tests/test_mosaic_paper_hot_source_provenance.py": {
+      "bytes": 15112,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "dff6a906c8f31cb8176d89b62fa33eee6cafe0054531842b381aa8fce7d72e92",
+      "upstream_path": "tests/test_mosaic_paper_hot_source_provenance.py"
+    },
+    "tools/analyze_rozephine_vrs_judgment_influence.py": {
+      "bytes": 5325,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "e96994f7b958393d4480ebfa4e1431435952d3ce6982e96bff15e3cfe97831d9",
+      "upstream_path": "tools/analyze_rozephine_vrs_judgment_influence.py"
+    },
+    "tools/run_rozephine_swegca_vrs_paper_phase2_baseline.py": {
+      "bytes": 36243,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "631aff638c5752fa61de93fb879b55860efbfe80ea3fdf6c4bfab7e4f374948a",
+      "upstream_path": "tools/run_rozephine_swegca_vrs_paper_phase2_baseline.py"
+    },
+    "tools/run_rozephine_swegca_vrs_paper_phase3_re_evidence.py": {
+      "bytes": 46073,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "ebc7ee1f9c4c6d76697806678e81b6fa6bd3e7ca70d835b45e1157b6c750c663",
+      "upstream_path": "tools/run_rozephine_swegca_vrs_paper_phase3_re_evidence.py"
+    },
+    "tools/run_rozephine_swegca_vrs_paper_phase5_specialist_swap.py": {
+      "bytes": 19222,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "c33ad3362fe2d4067635111dcebd6714d7aac6078889494c1d5d03c04357b640",
+      "upstream_path": "tools/run_rozephine_swegca_vrs_paper_phase5_specialist_swap.py"
+    },
+    "tools/validate_rozephine_swegca_vrs_paper_phase1_receipt_contract.py": {
+      "bytes": 17468,
+      "origin": "committed_upstream_byte_exact",
+      "sha256": "090d3126d000b736ed8a624a30af6b1619e46d6f6318a2c68f5f918ecf567cb0",
+      "upstream_path": "tools/validate_rozephine_swegca_vrs_paper_phase1_receipt_contract.py"
+    },
+    "verify_package.py": {
+      "bytes": 1844,
+      "origin": "packaging_scaffold",
+      "sha256": "a7ebb738dfbca689cec6cbb45ffb0ceab44bcb77d7ae78d2fc917e09720bddcd",
+      "upstream_path": null
+    }
+  },
+  "full_paper_complete": false,
+  "historical_runners_require_upstream_environment": true,
+  "license": "MIT; first-party code only, no media or models included",
+  "new_observed_experience_count": 0,
+  "new_remote_repository_created": false,
+  "schema_version": "vrs-reference-component-lineage-v1",
+  "scope": "decision and Luna transport components, offline saved comparisons and historical runner source",
+  "upstream_commit": "9ec73bdda92dfc7dbee168f0828827edea166a0d",
+  "upstream_repository": "https://github.com/raspie10032/tinylm-slicer"
+}

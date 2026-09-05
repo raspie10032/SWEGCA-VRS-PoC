@@ -1,0 +1,174 @@
+{
+  "schema_version": "rozephine-swegca-vrs-paper-public-artifact-manifest-v1",
+  "paper_title": "Does VRS Affect Judgment? A Proof-of-Concept Study of Evidence-Gated Memory in a SWEGCA Reference Implementation",
+  "freeze_date": "2026-09-05",
+  "publication_status": "source_validated_not_submitted",
+  "source_plan_sha256": "535ac028d8441d960abacfd900505cf4b033441a41d24b2216002fe10ca47042",
+  "frozen_evidence_reports": [
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE0_CLAIM_FREEZE_REPORT_2026-09-04.md",
+      "phase": "0",
+      "sha256": "d30b9c05e84304a73445ba3beaa7ba1994f5ff988fee911244b10b37e848ed59"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE1_RECEIPT_INSTRUMENTATION_REPORT_2026-09-04.md",
+      "phase": "1",
+      "sha256": "fe6b38ab4fbca76cf56f076814127e3d8c51054974fc4423e952c2d9d2439edd"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE2_BASELINE_REPORT_20260904.md",
+      "phase": "2",
+      "sha256": "70a08cbd1fa08b9361ba8b37919a54b5017d39ce832940ed656447245cbf07a0"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE3_RE_EVIDENCE_REPORT_20260904.md",
+      "phase": "3",
+      "sha256": "c0a10329027c623832c6e93732de3522ba91577fa0d3c918454c6a1c923d7a22"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE4_CONTEXT_RESET_REPORT_20260904.md",
+      "phase": "4",
+      "sha256": "4fc099981dafc76ab8ceb06883a1e1f473e08aaa176031dc53b6146493130c62"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE5_SPECIALIST_SWAP_REPORT_20260904.md",
+      "phase": "5",
+      "sha256": "d0e0a4c561b7308f9e6fbc2944ccc48c67c15ada2f3686bbc969c52ab892ccbd"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE6_LONGITUDINAL_HELDOUT_FREEZE_REPORT_20260904.md",
+      "phase": "6",
+      "sha256": "86b3df87a037964e255e1ac7e8b387e93d3ac491b3ba58afc2c5068824aefe77"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE6_HELDOUT_100_AMENDMENT_REPORT_20260905.md",
+      "phase": "6-amendment",
+      "sha256": "60bb5892f24ee08a91ffff89038cff6e5753c8720dbb7ce316efd97cac666156"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE7_RUN001_INVALID_REPORT_20260905.md",
+      "phase": "7-invalid",
+      "sha256": "9e268d82a1f9860e6157f8090a704f2e829f192e9d85109323f73840d31004ce"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE7_SOURCE_SPECIFIC_REPAIR_REPORT_20260905.md",
+      "phase": "7-repair",
+      "sha256": "9f2f529782a8d475f2251e11606f0aee05217032b6d31295089b9192cc828796"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE7_FRESH_HELDOUT_100_FREEZE_REPORT_20260905.md",
+      "phase": "7-fresh-freeze",
+      "sha256": "5144a6b51a2f2efcfe51dda14eafc4c219a6e248a52638050368bae60352abff"
+    },
+    {
+      "path": "docs/ROZEPHINE_SWEGCA_VRS_PAPER_PHASE7_SOURCE_SPECIFIC_HELDOUT_100_V2_REPORT_20260905.md",
+      "phase": "7-v2",
+      "sha256": "d3639a9902715b00867c8c13a6e2686e83115a142f78c339a72b3a334e887a4a"
+    }
+  ],
+  "sanitized_runtime_evidence": [
+    {
+      "role": "source-sanitized row-level final-confirmation results",
+      "sha256": "69542499dbc5a059999ad0af54b645a7af922b270e6450059fcef2765e08fafa"
+    }
+  ],
+  "protected_historical_trees": [
+    {
+      "git_tree": "ed8c0fbc10cf82c8d7e188cb6653729e90d1666f",
+      "path": "paper/swegca"
+    },
+    {
+      "git_tree": "883d0fa9b7d54815048b03d04e01f0636b438638",
+      "path": "paper/swegca_journal_v2"
+    }
+  ],
+  "public_artifacts": [
+    {
+      "bytes": 42357,
+      "path": "paper/swegca_vrs_persistent_cognition/main.tex",
+      "sha256": "358545126ea0e3d529425dff411cce2a3542953a5466a6cbc8676d3dc9e1c33c"
+    },
+    {
+      "bytes": 6488,
+      "path": "paper/swegca_vrs_persistent_cognition/references.bib",
+      "sha256": "c207bc38d19e1553c14384aa0e1cfa0e5bf654ea6088c00fc010b759c334823d"
+    },
+    {
+      "bytes": 11239,
+      "path": "paper/swegca_vrs_persistent_cognition/CLAIM_EVIDENCE_MATRIX.md",
+      "sha256": "b731fca5b5ff3741d4316afff6ea35cc4b800f99baeb8b663e9d21e382cec481"
+    },
+    {
+      "bytes": 7111,
+      "path": "paper/swegca_vrs_persistent_cognition/REPRODUCIBILITY.md",
+      "sha256": "0f2f201f130896a50d0b38e7298d7fa3f213c5aad06e74b6c90095504f99a689"
+    },
+    {
+      "bytes": 3152,
+      "path": "paper/swegca_vrs_persistent_cognition/ARXIV_METADATA.md",
+      "sha256": "d7335c0fe95649729ec6f256e2c76140d40341e0e29741a29b47bc28d10aade4"
+    },
+    {
+      "bytes": 3965,
+      "path": "paper/swegca_vrs_persistent_cognition/SUBMISSION_CHECKLIST.md",
+      "sha256": "bb416544c67e38d2fdbc954437cd60c8d5e42fbd74e76e198d7f71adaf1398e0"
+    },
+    {
+      "bytes": 2827,
+      "path": "paper/swegca_vrs_persistent_cognition/BUILD.md",
+      "sha256": "a49c40b6a7fb98d9e8660bafb7f60ee2f714a6fd6efc775f339e8fa384663c8c"
+    }
+  ],
+  "manifest_self_hash": "recorded_externally_in_phase8_report",
+  "excluded_from_public_package": [
+    "local planning documents and metadata",
+    "raw source media and private source identifiers",
+    "selection manifests and hidden held-out answers",
+    "per-role private receipts and runtime directories",
+    "credentials, cookies, account metadata, and private URLs"
+  ],
+  "evidence_accounting": {
+    "phase8_actual_outcomes": 0,
+    "phase8_assimilations": 0,
+    "phase8_distinct_new_source_episodes": 0,
+    "phase8_growth_claimed": false,
+    "phase8_vrs_reconvergences": 0
+  },
+  "authority": {
+    "email_delivery_performed": false,
+    "public_distribution_performed": false,
+    "public_submission_performed": false,
+    "rozephine_action": false,
+    "rozephine_distribution": false,
+    "rozephine_model_update": false,
+    "rozephine_p3": false,
+    "rozephine_persistent_write": false,
+    "rozephine_semantic": false,
+    "rozephine_world": false,
+    "sharing_change_performed": false
+  },
+  "current_revision": {
+    "analysis_timing": "post_hoc_existing_results",
+    "code_package_complete": false,
+    "config_path": "configs/rozephine_vrs_poc_manuscript_revision_v1.json",
+    "config_sha256": "377634ba95df6891c863883552894f9513265bf47cfbfde102e95df0612b985c",
+    "historical_phase8_evidence_unchanged": true,
+    "name": "poc-influence-question-correction-20260905",
+    "new_experience_count": 0,
+    "paper_complete": false,
+    "pdf_build_claimed": false,
+    "saved_output_reevaluation": {
+      "analysis_timing": "post_hoc_existing_outputs",
+      "new_raw_acquisitions": 0,
+      "path": "docs/worklogs/rozephine_existing_results_reevaluation_20260905.json",
+      "sha256": "26efe1241fc5089b3aa3b9adeffa202d6111a011c43dc8ed367d1f683a81b3a0"
+    },
+    "saved_specialist_comparisons": {
+      "path": "packaging/vrs_judgment_reference/specialist_comparisons.json",
+      "sha256": "0ca07b057a34fabcf1eb4f04e785b91300d657f93ad85bd9bbe9f6f416df294d",
+      "analysis_timing": "post_hoc_existing_outputs",
+      "new_model_calls": 0,
+      "cells": 30
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swegca-vrs-judgment-components"
+version = "0.1.0"
+description = "Research component reference; not a complete empirical reproduction package"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+# The full resident service is outside this component export. This is not PASS.
+addopts = "--deselect=tests/test_mosaic_paper_hot_source_provenance.py::test_integrated_read_only_handler_emits_source_receipts_and_rejects_writes"

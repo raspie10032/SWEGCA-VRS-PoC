@@ -1,0 +1,56 @@
+# Claim–evidence matrix
+
+This matrix accompanies *Does VRS Affect Judgment? A Proof-of-Concept Study of Evidence-Gated Memory in a SWEGCA Reference Implementation*. The primary question is influence, not correctness or superiority. This revision separates original pre-result gates from post-hoc interpretation and preserves all historical measurements. It is a PoC, not a finished product.
+
+## Explicit S/M/L comparison coverage
+
+The requested GPT-5.6 Luna comparison is retained. Phase2 C0/C1 gives Luna two strict outputs; S and E2B each have zero of two strict outputs. Phase3 C3-to-C4 changes, counted independently of correctness, are S 0/3 (parse failure and insufficient evidence), E2B 3/3 (support to refute), and Luna 3/3 (insufficient/abstain to refute). The same three development tasks are reused across models, not nine independent sources. Luna's three changes are not three corrections of previously supported false beliefs. Phase5 retains Luna refutation after all three swaps.
+
+These contrasts vary retrieval, Re-evidence or the specialist; they do not isolate VRS on/off. K's B0–B4 are not Luna controls. The receipts used here do not establish a complete three-model C0–C4 matrix or a 100-source Luna evaluation. This scope limit does not imply absent raw data or authorize new collection. `packaging/vrs_judgment_reference/specialist_comparisons.json` retains 30 minimized historical cells and four source-file hashes; its offline analyzer and `SPECIALIST_REPRODUCTION.md` map each result to actual transport/runner source and identify standalone versus upstream-dependent reproduction.
+
+| ID | Claim | Evidence | Boundary |
+|---|---|---|---|
+| C1 | The main process, rather than a language or perception model, owns identity, persistent cognitive state, accumulated experience, VRS, arbitration, provenance, and authority gates. | Phase 0 claim freeze; Phase 1 receipt instrumentation; exact main-state pair checks in Phases 3–7. | Architecture and implementation claim for the frozen reference system, not universal identity continuity. |
+| C2 | Current re-evidence prevented stale-support reuse in the constructed development diagnostic. | Phase 3: C3 reused stale support in 3/9 cells; C4 reused it in 0/9, with 6/9 current refutations and 3/9 safe abstentions. | The exact result is 9/9 safe non-reuse, not 9/9 successful corrections; tasks were constructed development cases. |
+| C3 | Provenance-bound task state survived specialist context reset. | Phase 4: 3/3 identical sealed requests retained transport, strict parsing, main pair, current refutation, and retention after a fresh E2B process with no raw prior dialogue. | Three tasks only; this is context-reset continuity, not proof of arbitrary-session continuity. |
+| C4 | Replacing the experience-organization specialist preserved main-owned state and failed closed when the replacement lacked task competence. | Phase 5: 6/6 identical requests preserved the main pair and ended in safe refutation or abstention; exact verdict retention was 3/6; strict parsing was 3/6. | S abstained 3/3 and retained exact verdict 0/3; L refuted and retained 3/3. Model replacement did not preserve every worker capability. |
+| C5 | Earlier outcome-bearing episodes remained addressable from a later full-current hot snapshot. | Phase 6: five distinct source episodes from five families, five actual outcomes labeled uncertain, four direct recalls, one transfer, one correction, and exact retention of 51 earlier episodes; later cue retrieval was 5/5 without lookup I/O. | The five cues are retention probes, not a memory allowlist. Uniformly uncertain outcomes limit learning claims. |
+| C6 | Historical source-specific analogy hypotheses were evaluated before later outcomes; they are not VRS-verified judgments. | Phase 7 v2: 100/100 completed; 64 correct, 27 incorrect, 9 abstain; accuracy 0.64; decisive coverage 0.91; 18/23 families with a correct result. All 100 Re-evidence receipts required abstention; all 91 non-null outputs were explicitly non_authoritative_hypothesis. | The helper reads recalled analogies, not a VRS projection. Original PASS is retained historically but cannot establish VRS causality or semantic verification. Always-failure would score 0.70; bounded no-memory always abstained. No unauthorized persistent writes are inferred from hypotheses. |
+| C7 | Temporal isolation was enforced in the valid final run. | All 100 prefix judgments were sealed before any later interval; the final prefix seal preceded the first later acquisition by 4,363,693 ns. | Monotonic process-clock ordering only; no sub-nanosecond reasoning claim. |
+| C8 | The final confirmation did not mutate resident cognition and was not a growth run. | Phase 7 v2 recorded zero assimilations, zero VRS reconvergences, exact resident/pair/retention checks, and `growth=false`. | It confirms later use of earlier experience; it does not demonstrate Phase 7 learning. |
+| N1 | The first 100-source run is invalid negative evidence. | Phase 7 v1 completed 100 sources and scored 0/100, but all source-specific proposals were collapsed to one generic cue and the same historical failure episode. | Neither system pass nor system failure. The 100 consumed sources were excluded from repair and confirmation. |
+| N2 | The source-specific repair was separated from final confirmation. | Repair used 25 development sources; the fresh v2 cohort contained 100 sources disjoint from both the invalid cohort and repair set and was frozen before execution. | Repair evidence cannot count as final held-out evidence. |
+| C9 | An integrated full-current memory branch produced a VRS-dependent output difference in one of three cases. | Phase23 Q001 changed from frozen/no-VRS abstention to current-VRS success; Q002/Q003 were unchanged abstentions. All five arms shared recalled candidates: 18, 5 and 18. Q001's two supporting relations came from one original source. | Primary bounded mechanism demonstration: 1 changed, 2 unchanged. Counting influence does not require correctness. No-VRS mechanically blocks promotion; no sham/shuffled relation-specificity, population effect, positive final-main effect or growth is established. |
+| N3 | The original correctness-dependent Phase23 gate failed; its utility comparison is secondary. | Only one uniquely bound contributing source was observed; current-only predicted all three outcomes correctly whereas current memory answered one. | Keep the historical failure, but do not infer no influence from it. Outcome-independent reanalysis is explicitly post-hoc. No new confirmation or automatic sample expansion is authorized by that reinterpretation. Q assimilation after this read-only experiment is separate from its evaluation record. |
+| N4 | An earlier A/B task showed no observed VRS-dependent choice change. | P8C: full-system and frozen-VRS both abstained on 12/12 sources; direct raw-choice comparison yields 0/12 changes. | Different task/generation from Q; do not pool into 1/15. No observed change is not proof of equivalence or universal absence. |
+| N5 | A second 100-source analogy condition underperformed a current-evidence baseline, without isolating VRS. | Phase9 F0 accuracy .60, balanced accuracy .622807; B2 .82 and .767544. Paired bootstrap difference interval [-.250000, -.048246]. Phase10 found no VRS computation input, 320/320 selected repair instances and 74 decisive hypotheses despite Re-evidence abstention. | Retain negative utility evidence and the helper's non-authoritative-hypothesis boundary; do not label F0 an isolated full SWEGCA+VRS condition. Post-seal numerical repairs prevent a pristine-run claim. |
+
+## Evidence accounting
+
+Saved-output re-evaluation (post-hoc, no new acquisition): J has 91 changed and 9 unchanged memory/bounded-no-memory outputs. K F0 versus B0/B1/B2/B3/B4 has respectively 51/53/38/60/51 changed outputs, with 49/47/62/40/49 unchanged, each over the same 100 source roles. In the F0/B2 comparison, 5 changes improve exact correctness, 27 worsen it and 6 leave exact correctness unchanged. These are retained algorithm/analogy contrasts, not relabeled VRS-only interventions. L/M/N/O/P retain three source episodes each (15 distinct source IDs), all with verified prefix/later receipt bindings; even the M attempt without a root completion report retains usable recorded observations. These facts are recomputed by `tools/reevaluate_rozephine_saved_paper_results.py`; the input-byte ledger and per-role transitions are in `docs/worklogs/rozephine_existing_results_reevaluation_20260905.json`. A defective evaluator is corrected separately from its raw evidence. No dataset is discarded merely because a stronger claim is unsupported, and no new collection is automatically required by this revision.
+
+| Phase | Distinct new source episodes | Actual outcomes | Assimilations | VRS reconvergences | Growth claimed |
+|---|---:|---:|---:|---:|---|
+| 2 baseline | 0 | 0 | 0 | 0 | no |
+| 3 re-evidence diagnostic | 0 | 0 | 0 | 0 | no |
+| 4 context reset | 0 | 0 | 0 | 0 | no |
+| 5 specialist swap | 0 | 0 | 0 | 0 | no |
+| 6 historical longitudinal evidence | 5 | 5 uncertain | recorded historical assimilation | recorded historical successor convergence | bounded longitudinal evidence only |
+| 7 historical analogy evaluation | 100 evaluation sources | 30 success, 70 failure | 0 | 0 | no |
+| 8 manuscript assembly | 0 | 0 | 0 | 0 | no |
+| 9 baseline comparison | 100 evaluation sources | 24 success, 76 failure | 0 | 0 | no |
+| 23 integrated causal pilot | 3 fresh development evaluation sources | 1 success, 2 failure | 0 during this evaluation | 0 during this evaluation | no |
+| Earlier P8C A/B trajectory | 12 evaluation sources | 11 uncertain, 1 conflict | 12 canonical outcomes; 0 diagnostic-arm outcomes | historical successors recorded | no comparative growth pass |
+| Current post-hoc manuscript correction | 0 | 0 | 0 | 0 | no |
+
+Generated rows, crops, chunks, repetitions, tokens, proposals, and model parameters are not counted as new source episodes.
+
+## Explicit non-claims
+
+The evidence does not establish AGI, consciousness, human-equivalent memory, universal identity continuity, general visual understanding, universal model-swap competence, calibrated VRS probabilities, or that the measured mechanism is the unique cause of every improvement. The bounded no-memory arm is a causal diagnostic and is not normal Rozephine architecture.
+
+Phase23 adds runtime-executed memory-branch ablation evidence, not a matched whole-system no-VRS baseline. Correctness and baseline superiority are not prerequisites for observing influence. The two 100-source datasets are not a 100-source isolated-VRS study. Source validation and an executable reference implementation do not themselves supply unmeasured scientific controls. This revised draft requires its own manifest/build verification before release; no public distribution or submission is authorized here.
+
+## Publication boundary
+
+This public matrix contains aggregate results, opaque phase labels, hashes elsewhere in the manifest, and repository-relative paths only. It excludes raw private source identifiers, private media, per-role receipts, account data, credentials, and hidden held-out answers.
