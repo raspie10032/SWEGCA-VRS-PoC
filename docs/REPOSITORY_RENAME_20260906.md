@@ -37,6 +37,14 @@ The GitHub rename returned ID `1358325197` unchanged, now `raspie10032/SWEGCA-VR
 
 Checks in the relocated folder: package verification PASS (11 entries and 24 reference entries); offline component tests **65 passed, 1 deselected in 0.06s**; whitespace check and read-only reverse-patch applicability PASS. The excluded full-resident integration test is not an integration pass. No model, GPU, VRS or raw-data job ran. Commit/push readback remains pending at this pre-upload checkpoint.
 
+## Verified synchronization result
+
+The manuscript, metadata, claim audit, preserved history patch, README/current links and rename record were committed as `14ae26c26a015e2e715e0364384fffe8369bf7a6` and pushed successfully to `main`. `git ls-remote` and the GitHub commit API both returned that exact SHA. The API tree `7e23ad30aff82f2b0a48a58e5150b260bd0bd64c` matched the local tree, confirming the complete committed file set rather than only an upload response. The working tree was clean after that push.
+
+Post-push repository readback confirmed unchanged ID `1358325197`, new name `raspie10032/SWEGCA-VRS-PoC`, private=true, visibility=private, default_branch=main and license=MIT. The local path and origin both use `SWEGCA-VRS-PoC`. Current manuscript SHA-256 remains `e94bd990713e37b4e2bbe2971a7738247c885ad00c5fa6c7b19206435bfb7d6a`.
+
+This paragraph records the verified payload commit; the following documentation-only checkpoint records that result without changing the manuscript. Public release, arXiv submission, PDF verification, full empirical replay and new experimental work have not occurred.
+
 ## Rozephine의 판단
 
 No new Rozephine judgment or experience is produced. Retained negative, uncertain and unchanged results and the Luna comparison remain unchanged.
