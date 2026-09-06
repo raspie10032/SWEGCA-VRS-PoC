@@ -8,6 +8,7 @@ Current private repository: [raspie10032/SWEGCA-VRS-PoC](https://github.com/rasp
 
 ## Contents
 
+- [Verified arXiv-generated PDF](paper/swegca_vrs_persistent_cognition/arxiv-corrected.pdf), 15 pages, 1 figure and 6 tables.
 - [Manuscript source](paper/swegca_vrs_persistent_cognition/main.tex) and bibliography, including the restored GPT-5.6 Luna comparison.
 - [Claim–evidence matrix](paper/swegca_vrs_persistent_cognition/CLAIM_EVIDENCE_MATRIX.md), reproduction notes and historical submission checklist.
 - [Reference implementation](reference/README.md): actual memory/VRS decision components, Luna transport and offline tests, saved specialist comparisons, and historical Phase2/3/5 caller source.
@@ -37,7 +38,7 @@ Existing Q evidence has one changed and two unchanged memory-branch decisions; a
 
 The compact specialist snapshot contains 30 historical cells, not 30 independent sources or new observations. Private source media, full experience/VRS state, models, credentials, original private receipts and private Git history are not included. Their exclusion from distribution does not mean their evidence was discarded or that new acquisition is required.
 
-**PDF build/layout and full bibliography verification remain pending. No arXiv submission or public release has occurred as part of this local revision.** The initial eight manuscript files were byte-exact imports. [The title-alignment note](docs/TITLE_ALIGNMENT_20260906.md) preserves the earlier correction; [the overclaim review](docs/OVERCLAIM_REVIEW_20260906.md) records the subsequent user-approved shorter title and claim audit. `UPSTREAM.json` tracks current hashes and prior lineage. Historical evidence paths and checklists do not imply that every upstream runtime artifact is present here. Current package commands are the ones above.
+**The corrected manuscript was re-submitted to arXiv on 2026-09-06 under submission ID `8040733`. The account confirmed `Article submitted`; status was `on hold` at 12:43 KST. This is a submission ID, not a public arXiv identifier or acceptance.** The arXiv-generated PDF compiled successfully and all 15 pages were visually checked; all 14 bibliography entries have visible source links. The source downloaded from arXiv matches the manuscript and bibliography in this repository. See [the submission synchronization record](docs/ARXIV_SYNC_20260906.md). This GitHub repository remains private; the arXiv source contains only the manuscript, bibliography and arXiv build configuration. The initial eight manuscript files were byte-exact imports. [The title-alignment note](docs/TITLE_ALIGNMENT_20260906.md) preserves the earlier correction; [the overclaim review](docs/OVERCLAIM_REVIEW_20260906.md) records the subsequent user-approved shorter title and claim audit. `UPSTREAM.json` tracks current hashes and prior lineage. Historical evidence paths and checklists do not imply that every upstream runtime artifact is present here. Current package commands are the ones above.
 
 ## Rozephine의 판단
 
@@ -45,7 +46,7 @@ Only already recorded outputs and constructed software tests are represented. Th
 
 ## Codex의 판단
 
-The historical private push established the imported checkpoint. The title/overclaim corrections and repository rename are tracked in [the synchronization record](docs/REPOSITORY_RENAME_20260906.md). Byte checks and offline execution do not establish full empirical replay, PDF acceptance, peer review or paper completion.
+The historical private push established the imported checkpoint. The title/overclaim corrections and repository rename are tracked in [the synchronization record](docs/REPOSITORY_RENAME_20260906.md). Byte checks and offline execution do not establish full empirical replay or peer review. The separate arXiv build and submission verification is recorded in the submission synchronization record.
 
 ## Codex 작업 실수 및 교정
 

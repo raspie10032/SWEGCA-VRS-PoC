@@ -38,7 +38,7 @@ across Context Resets and Replaceable Reasoning Models}
 \maketitle
 
 \begin{abstract}
-We present a reference implementation of SWEGCA with Verified Reinforcement Synapses (VRS). Its ownership contract assigns persistent cognitive state, accumulated experience, plastic relations and authority to a main process, while replaceable models produce proposals. We ask whether intervening on VRS changes the measured output, independently of whether the change is correct. The direct intervention endpoint is a memory-branch decision, not a final main-level semantic commit. Memory activation uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion.
+We present a reference implementation of Single-World Evidence-Gated Cognitive Agency (SWEGCA) with Verified Reinforcement Synapses (VRS). Its ownership contract assigns persistent cognitive state, accumulated experience, plastic relations and authority to a main process, while replaceable models produce proposals. We ask whether intervening on VRS changes the measured output, independently of whether the change is correct. The direct intervention endpoint is a memory-branch decision, not a final main-level semantic commit. Memory activation uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion.
 
 Separate continuity diagnostics retained provenance-bound refutations in 3/3 requests after an E2B context reset. Replacing E2B with a fixed 135.5M specialist and GPT-5.6 Luna retained the recorded main-state pair in all six calls on the same three requests, with refutation or abstention; exact verdict retention was 3/6, all from Luna. Five historical episodes remained retrievable from a later full-current snapshot. These are observations of state retention and task behavior in the tested configurations, not proof of general cognitive continuity, comprehensive safety or equal specialist capability.
 
@@ -164,6 +164,8 @@ A context reset destroys the specialist conversation, KV cache, process-local st
 
 \subsection{Preregistration and phase sequence}
 
+For traceability to the retained records, cohort J denotes the Phase-7 v2 analogy evaluation, K denotes the Phase-9 baseline evaluation, and Q denotes the Phase-23 VRS diagnostic. L--P denote five intervening development waves of three source episodes each. These cohort labels are distinct from the specialist abbreviations S, M and L defined below.
+
 The original experiments froze their own exclusions, metrics, source splits, model identities, reveal points and authority boundaries. The present correctness-independent framing is a subsequent, explicitly post-hoc analysis of those existing results; it was not their original primary endpoint. Consumed development and confirmation sources are not reclassified as fresh held-out data. Failed and aborted runs remain in the ledger. The historical sequence included:
 \begin{enumerate}[leftmargin=1.5em]
   \item freeze claims and receipt contracts;
@@ -266,7 +268,7 @@ Total & 6/6 & 1/3 & 1/3 \\
 In Phase 3, all 18 C3/C4 transports completed and 12 parsed strictly.  C3 reused stale support in 3/9 cells.  C4 reused stale support in 0/9, formed current refutations in 6/9, and safely abstained in 3/9.  The paired reduction is driven by the three E2B tasks, which changed from support under C3 to refute under C4.  L already abstained under C3, and S failed the strict proposal format; these are not counted as additional correction successes.  The exact claim is therefore \emph{no stale-support reuse in 9/9 C4 cells}, not ``9/9 corrections.''
 
 \paragraph{Retained three-model comparison.}
-The requested GPT-5.6 Luna comparison remains part of this study, not a replacement by the later non-model baselines. Table~\ref{tab:specialist-changes} makes the recorded judgment changes explicit, independently of their correctness. Luna changed from abstention to refutation on all three matched C3/C4 tasks; these are three changes even though they are not three corrections of an initially supported false belief. E2B also changed on all three tasks, from support to refutation. S remained at insufficient evidence following parse failures, so its zero changes do not establish equivalent specialist competence.
+Table~\ref{tab:specialist-changes} makes the recorded judgment changes explicit, independently of their correctness. Luna changed from abstention to refutation on all three matched C3/C4 tasks; these are three changes even though they are not three corrections of an initially supported false belief. E2B also changed on all three tasks, from support to refutation. S remained at insufficient evidence following parse failures, so its zero changes do not establish equivalent specialist competence.
 
 \begin{table}[ht]
 \centering
@@ -283,7 +285,7 @@ GPT-5.6 Luna & Insufficient & Refute & 3/3 & 6/6 \\
 \end{tabular}
 \end{table}
 
-This contrast changes Re-evidence, not VRS availability alone. It is reported separately from Q's VRS interventions and from the J/K analogy cohorts, with no pooled effect estimate. The original plan's three-model C0--C4 matrix must not be treated as fully completed by combining these different development tasks: the retained records used here establish C0/C1, C3/C4 and specialist-swap coverage, but do not establish a matched Luna C2/C4 or 100-source Luna comparison. This is a claim-coverage limit, not a claim that all other raw evidence is absent or a requirement to recollect existing results. The independently exportable package retains the actual Luna transport, offline transport tests, minimized historical verdicts and original Phase-2/3/5 runner source; historical end-to-end runners still require the original resident/model environment.
+This contrast changes Re-evidence, not VRS availability alone. It is reported separately from Q's VRS interventions and from the J/K analogy cohorts, with no pooled effect estimate. The original plan's three-model C0--C4 matrix must not be treated as fully completed by combining these different development tasks: the retained records used here establish C0/C1, C3/C4 and specialist-swap coverage, but do not establish a matched Luna C2/C4 or 100-source Luna comparison. These records establish only the comparisons reported here. The author's retained implementation includes the Luna transport, offline transport tests, minimized historical verdicts and original Phase-2/3/5 runner source. These materials are not included in the arXiv source; their availability and reproduction limits are stated in Section~\ref{sec:reproducibility}.
 
 \subsection{Context reset and model replacement}
 
@@ -293,7 +295,9 @@ Table~\ref{tab:continuity} separates recorded state preservation from specialist
 \centering
 \caption{Continuity diagnostics.  Exact verdict retention is reported separately from safe state preservation.}
 \label{tab:continuity}
-\begin{tabular}{p{3.0cm}p{2.4cm}ccccc}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{2.4cm}p{2.4cm}>{\centering\arraybackslash}p{0.85cm}*{4}{>{\centering\arraybackslash}p{2.25cm}}@{}}
 \toprule
 Operation & Specialist after boundary & Tasks & Identical request/pair & Strict parse & Safe refute/abstain & Exact verdict retained \\
 \midrule
@@ -339,9 +343,9 @@ All prefix hypotheses were durably sealed before outcome access. The last seal p
 
 Phase 9 reused this judgment helper. Its F0 analogy arm achieved accuracy 0.60 and balanced accuracy 0.622807; current-evidence-only B2 achieved 0.82 and 0.767544, respectively. The preregistered paired bootstrap interval for the balanced-accuracy difference was $[-0.250000,-0.048246]$. F0 therefore failed the original superiority endpoint. Phase 10 subsequently found all 320 selected episode instances came from the repair projection, and 74 decisive hypotheses occurred despite Re-evidence abstention. VRS identifiers existed in lineage metadata but were not computational inputs to the judgment. We retain the negative utility result while rejecting its interpretation as an isolated VRS comparison. Phase 9 required post-seal numerical-adapter repairs and is not described as a pristine first-pass run.
 
-\subsection{Re-evaluating retained outputs instead of recollecting data}
+\subsection{Post-hoc analysis of retained outputs}
 
-An incorrect evaluation criterion does not erase previously recorded predictions. We therefore recomputed output differences from the saved J and K records, without reacquisition, model invocation or VRS execution. In J, memory-based hypotheses differed from bounded no-memory abstention in 91/100 cases: 33 transitions to success, 58 to failure, and nine unchanged abstentions. These are observed memory/analogy output differences, not 91 isolated VRS effects or 91 verified semantic commits.
+We recomputed output differences from the saved J and K records, without reacquisition, model invocation or VRS execution. In J, memory-based hypotheses differed from bounded no-memory abstention in 91/100 cases: 33 transitions to success, 58 to failure, and nine unchanged abstentions. These are observed memory/analogy output differences, not 91 isolated VRS effects or 91 verified semantic commits.
 
 For K, all six conditions retain 100 predictions each. Pairing by the recorded source role gives the contrasts in Table~\ref{tab:retained-k-changes}. In particular, F0 differs from B2 in 38 cases despite its lower accuracy: five exact-correctness improvements, 27 degradations and six changes without an exact-correctness difference. Thus failing the original superiority gate does not imply identical outputs. These are comparisons between the implemented algorithms, not a retrospective claim that only VRS varied. No favorable gate label or correct outcome is required to count a difference.
 
@@ -362,7 +366,7 @@ B4 & 51 & 49 & 0 \\
 \end{tabular}
 \end{table}
 
-The intervening L--P waves also retain fifteen distinct source episodes, three per wave, including M's completed observations even though that attempt has no root completion report. Saved prefix-judgment and later-outcome receipts match their recorded content digests, source identifiers and revisions for all fifteen. Outcomes comprise two successes and thirteen failures; exact prefix prediction matches by wave are 2/3, 3/3, 2/3, 3/3 and 3/3. These are retained observation--prediction--outcome records, not newly acquired evidence or per-source VRS ablations. Their presence is not negated by later assimilation or eligibility failures. Together with Q, they provide an auditable development history; they are not pooled with J/K into a single effect estimate. Additional unmeasured controls limit specific claims rather than automatically requiring replacement of existing data.
+The intervening L--P waves also retain fifteen distinct source episodes, three per wave, including M's completed observations even though that attempt has no root completion report. Saved prefix-judgment and later-outcome receipts match their recorded content digests, source identifiers and revisions for all fifteen. Outcomes comprise two successes and thirteen failures; exact prefix prediction matches by wave are 2/3, 3/3, 2/3, 3/3 and 3/3. These are retained observation--prediction--outcome records, not newly acquired evidence or per-source VRS ablations. Their presence is not negated by later assimilation or eligibility failures. Together with Q, they provide an auditable development history; they are not pooled with J/K into a single effect estimate. These records do not supply the unmeasured controls needed for broader causal claims.
 
 \section{Negative Result and Repair}
 
@@ -397,17 +401,20 @@ This failure illustrates a methodological limitation: temporal isolation, model 
 
 The evaluation used a mixture of repository evidence, locally available media, public web material, and external model services under a private research workflow.  Public artifacts exclude raw private paths, raw source identifiers, account data, credentials, per-role private receipts, and media whose redistribution has not been established.  Source files that cannot be redistributed are represented only by opaque family identifiers, hashes, technical metadata, and an acquisition contract.
 
-Memory records remain non-authoritative unless they cross the current evidence and authority gates. This is important for public or model-generated observations, which can contain errors or unsafe instructions. No evaluation in this paper authorizes external action, persistent model update, distribution or a P3 claim. Historical status/cue retention probes are distinct from the later causal endpoint's bounded judgment receipts; neither is presented as free-form natural-language self-assessment by the system.
+Memory records remain non-authoritative unless they cross the current evidence and authority gates. This is important for public or model-generated observations, which can contain errors or unsafe instructions. The reported diagnostics do not establish authorization for external actions, persistent model updates or distribution. Historical status/cue retention probes are distinct from the later causal endpoint's bounded judgment receipts; neither is presented as free-form natural-language self-assessment by the system.
 
 The terms ``Deja vu'' and ``synapse'' are functional analogies.  We make no neuroscientific equivalence claim.  The system is not presented as conscious, human-equivalent, or generally intelligent.
 
 \section{Reproducibility}
+\label{sec:reproducibility}
 
-The retained evidence includes configurations, source and code revisions, snapshot identifiers, original gates, intermediate receipts, reports and content hashes, with coverage varying by run. In particular, the M wave discussed above has saved observations but no root completion report. The separate source package contains manuscript sources, a claim--evidence matrix, a sanitized artifact manifest and local verification commands; it does not contain every historical runtime artifact. Private per-source receipts and raw media remain excluded. Failed and invalid run identifiers are retained so that the reported lineage and its gaps remain explicit.
+The author retains configurations, source and code revisions, snapshot identifiers, original gates, intermediate receipts, reports and content hashes, with coverage varying by run. In particular, development wave M has saved observations but no root completion report. Failed and invalid run identifiers are retained to make gaps in the evidence lineage explicit.
 
-Source checks require frozen-report hashes, resolved citation keys, publication-safety scans, protected historical trees and matching aggregate numbers. The historical Phase-8 manifest describes its original source freeze and must not be presented as validation of this revised draft. The correctness-independent analysis reads saved receipts without new media, models or VRS execution; it cannot substitute for empirical runtime reproduction. Re-execution additionally requires lawful media and model access, supplied by the operator without embedded credentials. Existing experimental evidence is not rerun merely to improve a score.
+The arXiv source accompanying this article contains the manuscript and bibliography. At the time of submission, the implementation, claim--evidence matrix, artifact manifest and verification scripts are retained in a private research repository and are not publicly released with this article. Raw media and private per-source receipts are not redistributed. The absence of these materials from the public submission limits independent reproduction of the reported results.
 
-The host used for paper assembly did not contain a TeX engine at freeze time. Local source checks cover byte consistency, syntax-level references and selected claim boundaries; they do not establish scientific validity or PDF correctness. A PDF build and visual inspection remain separate packaging checks before submission. Historical end-to-end runners also require the original resident/model environment; passing offline component tests is not a full empirical replay.
+The source checks compare frozen-report hashes and aggregate numbers, resolve citation keys, scan for private material and preserve historical records. The historical Phase-8 manifest documents the original source freeze. The correctness-independent analysis uses saved receipts without new media, model calls or VRS execution; it is not an empirical rerun. Historical end-to-end runners require the original resident/model environment and lawful access to the source media and models.
+
+Byte-consistency checks and offline component tests establish only the properties they examine. They do not constitute independent end-to-end reproduction or establish scientific validity.
 
 \section{Conclusion}
 
@@ -417,9 +424,10 @@ Within the measured continuity diagnostics, all three provenance-bound E2B refut
 
 The direct visual-stability diagnostic showed one VRS-dependent memory-branch change and two unchanged decisions. An earlier A/B task showed twelve unchanged full/frozen choices. These observations concern different tasks and are not pooled. The larger analogy evaluations add secondary behavior and utility evidence, including a negative baseline comparison, but their metadata alone does not establish VRS causality. Their non-authoritative hypotheses must remain distinct from verified semantic judgments.
 
-The paper provides a reference implementation, recorded state-retention diagnostics and one observed VRS-dependent memory-branch difference under matched recalled experience. These are separate findings: state retention is not VRS-specific causal evidence, and the branch difference is not evidence of broad cognitive persistence. Influence need not be beneficial or universal, and the disabled-promotion control limits relation-specific interpretation. Working reference code, explicit evidence boundaries and retained negative results are the deliverable; general competence and product completeness are not prerequisites. Broader effect estimation, relation-specific controls and final-main generalization remain unestablished rather than silently assumed.
+The paper provides a reference implementation, recorded state-retention diagnostics and one observed VRS-dependent memory-branch difference under matched recalled experience. These are separate findings: state retention is not VRS-specific causal evidence, and the branch difference is not evidence of broad cognitive persistence. Influence need not be beneficial or universal, and the disabled-promotion control limits relation-specific interpretation. The study reports an implemented reference path, explicit evidence boundaries and retained negative results. Broader effect estimation, relation-specific controls and final-main generalization remain unestablished rather than silently assumed.
 
 \bibliographystyle{abbrv}
 \bibliography{references}
 
 \end{document}
+

@@ -2,7 +2,7 @@
   "schema_version": "rozephine-swegca-vrs-paper-public-artifact-manifest-v1",
   "paper_title": "Evidence-Gated Experience and Verified Reinforcement Synapses across Context Resets and Replaceable Reasoning Models",
   "freeze_date": "2026-09-05",
-  "publication_status": "source_validated_not_submitted",
+  "publication_status": "arxiv_submitted_on_hold",
   "source_plan_sha256": "535ac028d8441d960abacfd900505cf4b033441a41d24b2216002fe10ca47042",
   "frozen_evidence_reports": [
     {
@@ -84,14 +84,14 @@
   ],
   "public_artifacts": [
     {
-      "bytes": 46754,
+      "bytes": 46716,
       "path": "paper/swegca_vrs_persistent_cognition/main.tex",
-      "sha256": "e94bd990713e37b4e2bbe2971a7738247c885ad00c5fa6c7b19206435bfb7d6a"
+      "sha256": "6e5b573917726a6bfba209ab111f7ba38f8864593cc9da107b74b2250f8068bc"
     },
     {
-      "bytes": 6488,
+      "bytes": 7360,
       "path": "paper/swegca_vrs_persistent_cognition/references.bib",
-      "sha256": "c207bc38d19e1553c14384aa0e1cfa0e5bf654ea6088c00fc010b759c334823d"
+      "sha256": "af4640f3ae4f44041bf9b5032a86a4614219de7fb912c4dd70707674cf4c1e20"
     },
     {
       "bytes": 12290,
@@ -99,24 +99,29 @@
       "sha256": "915fe22d4d1920de63f9c62849c01ffd195295d4ab92de39c0fe2af5532016b7"
     },
     {
-      "bytes": 7111,
+      "bytes": 7921,
       "path": "paper/swegca_vrs_persistent_cognition/REPRODUCIBILITY.md",
-      "sha256": "0f2f201f130896a50d0b38e7298d7fa3f213c5aad06e74b6c90095504f99a689"
+      "sha256": "4f68ab574a2908af8500d3d86d80eaf64fa902e26326a3e4bf2024f16d17d154"
     },
     {
-      "bytes": 3630,
+      "bytes": 3003,
       "path": "paper/swegca_vrs_persistent_cognition/ARXIV_METADATA.md",
-      "sha256": "2b48f6091b2bfcc517f328367f50e0338cb01d85b066ff4574da3febe4ede8bf"
+      "sha256": "d8a1fb3b7f8d06498f560a00d5b3031eefdd9c7fc05421ede98066388f6310ab"
     },
     {
-      "bytes": 3965,
+      "bytes": 5099,
       "path": "paper/swegca_vrs_persistent_cognition/SUBMISSION_CHECKLIST.md",
-      "sha256": "bb416544c67e38d2fdbc954437cd60c8d5e42fbd74e76e198d7f71adaf1398e0"
+      "sha256": "7a43149be6fcc8fb152546d7183d52e680eac72b695194bebf87fbeebd7ebfa6"
     },
     {
-      "bytes": 2827,
+      "bytes": 3638,
       "path": "paper/swegca_vrs_persistent_cognition/BUILD.md",
-      "sha256": "a49c40b6a7fb98d9e8660bafb7f60ee2f714a6fd6efc775f339e8fa384663c8c"
+      "sha256": "d55c2905245e50dbcf2b4c27fc99731751bb32a49ad8340a7aa4876f4f9aff55"
+    },
+    {
+      "path": "paper/swegca_vrs_persistent_cognition/arxiv-corrected.pdf",
+      "bytes": 311275,
+      "sha256": "6fb302449f5e67381abaaf0c42cd5a7c16363b7a427e528737ee4cb0c91a472b"
     }
   ],
   "manifest_self_hash": "current bytes recorded in UPSTREAM.json; historical phase8 hash retained in upstream history",
@@ -172,12 +177,11 @@
     }
   },
   "editorial_revision": {
-    "name": "subtitle-title-and-overclaim-audit-20260906",
+    "name": "arxiv-submitted-editorial-corrections-20260906",
     "date": "2026-09-06",
-    "baseline_commit": "1a09e1278c3ea91174668d472a2d1d726bd2371e",
-    "baseline_working_manuscript_sha256": "50a9ec51a7ee1f04894c5d3ba079bcee6db090630921659b8770bdaecb6f61f7",
-    "note": "docs/OVERCLAIM_REVIEW_20260906.md",
-    "scope": "local user-approved title narrowing and evidence-bound editorial corrections",
+    "baseline_commit": "1cd67ec6fb139e147e94432f66da3852c53fca3d",
+    "note": "docs/ARXIV_SYNC_20260906.md",
+    "scope": "synchronize exact submitted source and PDF; update companion metadata",
     "new_model_calls": 0,
     "new_raw_acquisitions": 0,
     "new_vrs_runs": 0
@@ -193,6 +197,43 @@
       "new_model_calls": 0,
       "new_raw_acquisitions": 0,
       "new_vrs_runs": 0
+    },
+    {
+      "name": "subtitle-title-and-overclaim-audit-20260906",
+      "date": "2026-09-06",
+      "baseline_commit": "1a09e1278c3ea91174668d472a2d1d726bd2371e",
+      "baseline_working_manuscript_sha256": "50a9ec51a7ee1f04894c5d3ba079bcee6db090630921659b8770bdaecb6f61f7",
+      "note": "docs/OVERCLAIM_REVIEW_20260906.md",
+      "scope": "local user-approved title narrowing and evidence-bound editorial corrections",
+      "new_model_calls": 0,
+      "new_raw_acquisitions": 0,
+      "new_vrs_runs": 0
     }
-  ]
+  ],
+  "historical_publication_status": "source_validated_not_submitted",
+  "authority_scope": "historical Phase 8 operations; current submission is recorded separately in arxiv_submission",
+  "current_revision_scope": "historical PoC source/evidence revision; later build and submission recorded in arxiv_submission",
+  "arxiv_submission": {
+    "submission_id": "8040733",
+    "public_arxiv_id": null,
+    "status": "on hold",
+    "verified_at": "2026-09-06T12:43:00+09:00",
+    "confirmation": "Article submitted",
+    "category": "cs.AI",
+    "license": "CC BY 4.0",
+    "pages": 15,
+    "figures": 1,
+    "tables": 6,
+    "compiler": "pdflatex",
+    "tex_live": "2025",
+    "pdf_build_succeeded": true,
+    "all_pdf_pages_visually_reviewed": true,
+    "server_source_matches": true,
+    "github_visibility": "private",
+    "source_contents": [
+      "00README.json",
+      "main.tex",
+      "references.bib"
+    ]
+  }
 }

@@ -1,6 +1,21 @@
 # Build and validation
 
-## Current build status
+## Current build status: 2026-09-06
+
+arXiv successfully compiled the corrected source with pdflatex and TeX Live 2025. The downloaded [PDF](arxiv-corrected.pdf) has 15 pages, 1 figure and 6 tables. All pages were visually inspected; the 14 reference links are present. The source package downloaded from arXiv matches `main.tex` and `references.bib` byte for byte. See [the synchronization record](../../docs/ARXIV_SYNC_20260906.md).
+
+For checks available in this standalone repository, run from its root:
+
+```sh
+python verify_repository.py
+cd reference
+python -m pytest -q
+python analyze_specialist_comparisons.py
+```
+
+These are byte/component checks and saved-output analysis, not new empirical experiments. The historical commands below require the original research checkout.
+
+## Historical Phase 8 build status
 
 At the Phase 8 freeze, the assembly host had no `latexmk`, `pdflatex`, `bibtex`, `tectonic`, `pandoc`, `lualatex`, or `xelatex` executable. Installing a TeX distribution was outside the authorized scope. Therefore:
 
@@ -9,7 +24,7 @@ At the Phase 8 freeze, the assembly host had no `latexmk`, `pdflatex`, `bibtex`,
 - absence of a local PDF is not treated as a manuscript-source failure; and
 - PDF layout validation remains an author action in an existing TeX environment.
 
-## Validate the source package
+## Historical research-checkout source validation
 
 For the current PoC revision (existing data only; no media/model execution):
 

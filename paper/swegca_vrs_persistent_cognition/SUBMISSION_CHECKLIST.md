@@ -1,5 +1,19 @@
 # Submission checklist
 
+## Current submitted revision: 2026-09-06
+
+- [x] Exact corrected manuscript and bibliography synchronized with the source downloaded from arXiv.
+- [x] arXiv pdflatex/TeX Live 2025 compilation succeeded.
+- [x] All 15 PDF pages visually inspected, including tables, figure and bibliography.
+- [x] All 14 bibliography source links are present; no embedded attachments or unresolved double-question-mark references found.
+- [x] Final metadata checked: Dongjun Park; Independent Researcher; cs.AI; CC BY 4.0; 15 pages, 1 figure, 6 tables.
+- [x] Existing submission `8040733` updated and re-submitted; account confirmed `Article submitted`.
+- [ ] Public announcement: status was `on hold` at 12:43 KST; no public identifier or acceptance confirmed.
+
+The manuscript/bibliography and arXiv build configuration were submitted. Companion evidence and implementation remain private. See [the synchronization record](../../docs/ARXIV_SYNC_20260906.md). The checklist below preserves the original pre-submission checkpoint; its pending items are historical and do not override the current record above.
+
+## Historical pre-submission checklist
+
 Status legend: `[x]` below records historical Phase8 checks unless explicitly labeled current revision. `[ ]` denotes pending work or author action. The revised PoC draft has a separate source/receipt validator; old checks do not automatically close this revision. No checklist completion authorizes submission, sharing, email or distribution.
 
 ## Evidence and manuscript
@@ -46,6 +60,6 @@ Status legend: `[x]` below records historical Phase8 checks unless explicitly la
 - [ ] Upload source/PDF through the author's own account.
 - [ ] Review arXiv's generated preview and metadata before clicking submit.
 
-## Current handoff boundary
+## Historical handoff boundary
 
 The current PoC manuscript centers on the Q memory-branch difference and P8C no-change result; the two 100-source analogy datasets are secondary. It is not a finished-product claim. The revision must pass its own source/receipt validation, reference-code packaging and PDF/layout checks before a full paper-completion claim. Broad task competence, benchmark leadership and commercial-product features are not requirements. No PDF validation, submission or public release is claimed here.

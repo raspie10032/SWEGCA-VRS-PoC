@@ -2,7 +2,13 @@
 
 This package supports two different levels of reproduction. Source-level verification is possible from the repository alone. Empirical re-execution additionally requires lawful access to the source media and model runtimes used by the experiment; those private or licensed inputs are not redistributed.
 
-## Public package
+## Current availability and standalone checks
+
+As of the 2026-09-06 arXiv resubmission, this repository remains private. The submitted arXiv source contains only `main.tex`, `references.bib` and arXiv's build configuration; it does not include the implementation, matrix, manifest or private evidence. This limits independent reproduction. The checked PDF is retained as `arxiv-corrected.pdf`.
+
+In this standalone repository, use `python verify_repository.py`, `python -m pytest -q` from `reference/`, and `python reference/analyze_specialist_comparisons.py` from the repository root. The research-checkout commands retained below refer to upstream tools/configurations and are not directly runnable here. See [the submission record](../../docs/ARXIV_SYNC_20260906.md).
+
+## Publication-safe companion package (not uploaded to arXiv)
 
 The publication-safe set is:
 
@@ -21,7 +27,7 @@ The publication-safe set is:
 
 For this revised PoC draft run `PYTHONPATH=src:. python tools/validate_rozephine_vrs_poc_revision.py` in the repository's configured Python environment. It retains the historical checks below and additionally binds existing Q/P8C/J/K receipts and the 100 J activation hashes through `configs/rozephine_vrs_poc_manuscript_revision_v1.json`. Those private raw receipts are needed for the full local audit; this is not a claim that the eight-file manuscript-only package reproduces the experiment without its authorized inputs. Reference-code packaging and empirical reproduction are distinct from manuscript validation.
 
-From the repository root, run:
+From the original research repository root, run:
 
 ```bash
 .runtime-rozephine-python314-torch214-cu132-20260903/venv/bin/python \
@@ -52,14 +58,14 @@ Full empirical re-execution requires the exact code revision, model identities, 
 - the memory arm uses the full current accumulated-experience snapshot, while the no-memory arm remains a bounded diagnostic;
 - failed, uncertain, conflicting, negative, and pending experience remains available to VRS convergence;
 - specialists receive detached read-only state and return proposals only;
-- no memory record or worker output grants semantic, action, write, model-update, distribution, or P3 authority by itself; and
+- no memory record or worker output grants semantic, action, write, model-update, distribution, or distribution authority by itself; and
 - the resident main-owned state is unchanged by the final confirmation.
 
 No command in this public package embeds a source path, username, token, cookie, account identifier, private URL, or hidden answer. Re-execution operators must provide authorized inputs through their own environment and must not publish non-redistributable media or private receipts.
 
 ## Retained GPT-5.6 Luna comparison
 
-Use `python packaging/vrs_judgment_reference/analyze_specialist_comparisons.py` in this checkout, or `python analyze_specialist_comparisons.py` from the extracted component package. This reads 30 minimized saved S/M/L cells only. C3/C4 produces 0/3 changes for 135.5M, 3/3 for E2B and 3/3 for Luna; parse failures and abstentions remain explicit. C0/C1 and post-swap outputs are retained separately. These are development diagnostics, not new outcomes or VRS-only effects.
+Use `python reference/analyze_specialist_comparisons.py` from this repository root, or `python analyze_specialist_comparisons.py` from `reference/`. This reads 30 minimized saved S/M/L cells only. C3/C4 produces 0/3 changes for 135.5M, 3/3 for E2B and 3/3 for Luna; parse failures and abstentions remain explicit. C0/C1 and post-swap outputs are retained separately. These are development diagnostics, not new outcomes or VRS-only effects.
 
 The actual Luna transport and its mock tests now accompany original Phase2/3/5 caller source. `SPECIALIST_REPRODUCTION.md` in the package distinguishes independently executable transport/component tests and saved-data analysis from historical runners requiring the original resident/model environment. Source inclusion is not a claim of full portable empirical replay. The original 15-cell matrix is not declared complete, K is not a Luna replacement, and unestablished comparisons do not automatically trigger new acquisition.
 
