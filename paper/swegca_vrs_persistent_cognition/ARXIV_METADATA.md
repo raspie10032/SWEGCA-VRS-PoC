@@ -4,7 +4,7 @@ This file is a user-reviewable metadata draft. No submission, public distributio
 
 ## Title
 
-Does VRS Affect Judgment? A Proof-of-Concept Study of Evidence-Gated Memory in a SWEGCA Reference Implementation
+Evidence-Gated Experience and Verified Reinforcement Synapses across Context Resets and Replaceable Reasoning Models
 
 ## Authors
 
@@ -14,7 +14,11 @@ Affiliation in manuscript: Independent Researcher
 
 ## Abstract
 
-Does a plastic relation layer affect an agent's judgment, independently of whether the resulting judgment is correct? We investigate this question in a reference implementation of SWEGCA with Verified Reinforcement Synapses. A main process owns persistent cognition, experience and authority; replaceable models produce proposals. The evaluated memory branch uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion. In a three-source runtime diagnostic, current VRS produced one memory-branch decision different from frozen and disabled VRS under identical recalled candidates; two decisions were unchanged. An earlier twelve-source A/B task produced no full-system versus frozen-VRS choice changes. We report these task-specific observations separately, without treating correctness as a condition for counting influence. Two historical 100-source evaluations provide secondary analogy and utility data, not isolated VRS evidence: their judgment helper did not consume a VRS projection. One achieved 0.64 accuracy; the other achieved 0.60 against a current-evidence baseline of 0.82. A receipt audit also distinguishes non-authoritative analogy hypotheses from re-evidence-approved judgments. The evidence demonstrates an executable, bounded VRS-dependent decision path, not general benefit or a population effect. The disabled-VRS branch mechanically prevents promotion, so the observed difference does not isolate learned relation content from that gate. Original pre-result gates and later post-hoc interpretation are distinguished. This is a concept-validation study with a reference implementation, not a finished product, and it makes no general-intelligence or cognitive-growth claim.
+We present a reference implementation of SWEGCA with Verified Reinforcement Synapses (VRS). Its ownership contract assigns persistent cognitive state, accumulated experience, plastic relations and authority to a main process, while replaceable models produce proposals. We ask whether intervening on VRS changes the measured output, independently of whether the change is correct. The direct intervention endpoint is a memory-branch decision, not a final main-level semantic commit. Memory activation uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion.
+
+Separate continuity diagnostics retained provenance-bound refutations in 3/3 requests after an E2B context reset. Replacing E2B with a fixed 135.5M specialist and GPT-5.6 Luna retained the recorded main-state pair in all six calls on the same three requests, with refutation or abstention; exact verdict retention was 3/6, all from Luna. Five historical episodes remained retrievable from a later full-current snapshot. These are observations of state retention and task behavior in the tested configurations, not proof of general cognitive continuity, comprehensive safety or equal specialist capability.
+
+In a three-source runtime diagnostic, current VRS produced one memory-branch decision different from frozen and disabled VRS under identical recalled candidates; two were unchanged. An earlier twelve-source A/B task produced no full-system versus frozen-VRS choice changes. The disabled-VRS branch mechanically prevents promotion, limiting relation-specific interpretation. Two historical 100-source evaluations provide secondary analogy and utility data, not isolated VRS evidence: accuracy was 0.64 in one and 0.60 against a current-evidence baseline of 0.82 in the other. Their non-authoritative hypotheses are not re-evidence-approved judgments. We report these task-specific results separately and distinguish original pre-result gates from post-hoc interpretation. This concept-validation study provides an executable reference path and one observed VRS-dependent output difference; it does not establish general benefit, a population effect, cognitive growth or a finished product.
 
 ## Suggested classification
 
@@ -29,7 +33,7 @@ English preprint; source package includes a claim–evidence matrix, sanitized a
 
 ## Keywords
 
-VRS; judgment influence; proof of concept; agent memory; provenance; evidence gating; abstention; causal diagnostic; negative results
+context reset; model replacement; Verified Reinforcement Synapses; VRS influence; proof of concept; provenance; evidence gating; negative results
 
 ## Author decisions still required
 

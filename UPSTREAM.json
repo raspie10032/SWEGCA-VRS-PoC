@@ -9,6 +9,57 @@
       "sha256": "1412d8136bbd6fee996b1707ce0ad206308bdf8176fc1a41ac4ec0c0c199a86a"
     },
     "paper/swegca_vrs_persistent_cognition/ARTIFACT_MANIFEST_PUBLIC.json": {
+      "bytes": 7979,
+      "sha256": "7dae55a5031268468154e76ffaf4d5f9c26745459b310b2551ddc7b9ada4dcf7"
+    },
+    "paper/swegca_vrs_persistent_cognition/ARXIV_METADATA.md": {
+      "bytes": 3630,
+      "sha256": "2b48f6091b2bfcc517f328367f50e0338cb01d85b066ff4574da3febe4ede8bf"
+    },
+    "paper/swegca_vrs_persistent_cognition/BUILD.md": {
+      "bytes": 2827,
+      "sha256": "a49c40b6a7fb98d9e8660bafb7f60ee2f714a6fd6efc775f339e8fa384663c8c"
+    },
+    "paper/swegca_vrs_persistent_cognition/CLAIM_EVIDENCE_MATRIX.md": {
+      "bytes": 12290,
+      "sha256": "915fe22d4d1920de63f9c62849c01ffd195295d4ab92de39c0fe2af5532016b7"
+    },
+    "paper/swegca_vrs_persistent_cognition/REPRODUCIBILITY.md": {
+      "bytes": 7111,
+      "sha256": "0f2f201f130896a50d0b38e7298d7fa3f213c5aad06e74b6c90095504f99a689"
+    },
+    "paper/swegca_vrs_persistent_cognition/SUBMISSION_CHECKLIST.md": {
+      "bytes": 3965,
+      "sha256": "bb416544c67e38d2fdbc954437cd60c8d5e42fbd74e76e198d7f71adaf1398e0"
+    },
+    "paper/swegca_vrs_persistent_cognition/main.tex": {
+      "bytes": 46754,
+      "sha256": "e94bd990713e37b4e2bbe2971a7738247c885ad00c5fa6c7b19206435bfb7d6a"
+    },
+    "paper/swegca_vrs_persistent_cognition/references.bib": {
+      "bytes": 6488,
+      "sha256": "c207bc38d19e1553c14384aa0e1cfa0e5bf654ea6088c00fc010b759c334823d"
+    },
+    "reference/LINEAGE.json": {
+      "bytes": 7331,
+      "sha256": "c2c4bfc313832d0717b45a13136a484b426ab5422b401cad6d052cd43a5bd1c0"
+    }
+  },
+  "independent_history": true,
+  "license": "MIT for first-party code",
+  "upstream_commit": "9ec73bdda92dfc7dbee168f0828827edea166a0d",
+  "upstream_repository": "https://github.com/raspie10032/tinylm-slicer",
+  "visibility_intent": "PRIVATE",
+  "imported_files": {
+    "LICENSE": {
+      "bytes": 1069,
+      "sha256": "b2d581a6cd5447685df2df591a04fc975c1bc7cf5194cd35ac005a1a5562b3a2"
+    },
+    "docs/reference-source.tar": {
+      "bytes": 327680,
+      "sha256": "1412d8136bbd6fee996b1707ce0ad206308bdf8176fc1a41ac4ec0c0c199a86a"
+    },
+    "paper/swegca_vrs_persistent_cognition/ARTIFACT_MANIFEST_PUBLIC.json": {
       "bytes": 6913,
       "sha256": "bddf0079847d535327ac68e4ef5f90c335e9095b872eeee470132a077e18e571"
     },
@@ -45,9 +96,78 @@
       "sha256": "c2c4bfc313832d0717b45a13136a484b426ab5422b401cad6d052cd43a5bd1c0"
     }
   },
-  "independent_history": true,
-  "license": "MIT for first-party code",
-  "upstream_commit": "9ec73bdda92dfc7dbee168f0828827edea166a0d",
-  "upstream_repository": "https://github.com/raspie10032/tinylm-slicer",
-  "visibility_intent": "PRIVATE"
+  "editorial_revision": {
+    "name": "subtitle-title-and-overclaim-audit-20260906",
+    "date": "2026-09-06",
+    "baseline_commit": "1a09e1278c3ea91174668d472a2d1d726bd2371e",
+    "baseline_working_manuscript_sha256": "50a9ec51a7ee1f04894c5d3ba079bcee6db090630921659b8770bdaecb6f61f7",
+    "note": "docs/OVERCLAIM_REVIEW_20260906.md",
+    "scope": "local user-approved title narrowing and evidence-bound editorial corrections",
+    "new_model_calls": 0,
+    "new_raw_acquisitions": 0,
+    "new_vrs_runs": 0,
+    "hash_scope": "files: current bytes; imported_files: original import; editorial_revision_history: prior local revision"
+  },
+  "editorial_revision_history": [
+    {
+      "revision": {
+        "name": "original-title-alignment-20260906",
+        "date": "2026-09-06",
+        "baseline_commit": "1a09e1278c3ea91174668d472a2d1d726bd2371e",
+        "original_title_source_commit": "76804a4045",
+        "note": "docs/TITLE_ALIGNMENT_20260906.md",
+        "scope": "local framing and metadata correction; historical evidence and implementation unchanged",
+        "new_model_calls": 0,
+        "new_raw_acquisitions": 0,
+        "new_vrs_runs": 0,
+        "hash_scope": "files holds current package bytes; imported_files preserves original upstream snapshot hashes"
+      },
+      "files": {
+        "LICENSE": {
+          "bytes": 1069,
+          "sha256": "b2d581a6cd5447685df2df591a04fc975c1bc7cf5194cd35ac005a1a5562b3a2"
+        },
+        "docs/reference-source.tar": {
+          "bytes": 327680,
+          "sha256": "1412d8136bbd6fee996b1707ce0ad206308bdf8176fc1a41ac4ec0c0c199a86a"
+        },
+        "paper/swegca_vrs_persistent_cognition/ARTIFACT_MANIFEST_PUBLIC.json": {
+          "bytes": 7472,
+          "sha256": "ea9f3d392413d938e23a3a00ef41ad9f67954fc6a4ad37a054c921f1bb70a44a"
+        },
+        "paper/swegca_vrs_persistent_cognition/ARXIV_METADATA.md": {
+          "bytes": 3726,
+          "sha256": "4d3b270cb32836a76338b9795ecfa7dd3ac68db4b2e0a9da8f05868363a12acf"
+        },
+        "paper/swegca_vrs_persistent_cognition/BUILD.md": {
+          "bytes": 2827,
+          "sha256": "a49c40b6a7fb98d9e8660bafb7f60ee2f714a6fd6efc775f339e8fa384663c8c"
+        },
+        "paper/swegca_vrs_persistent_cognition/CLAIM_EVIDENCE_MATRIX.md": {
+          "bytes": 12319,
+          "sha256": "ad90fdfe38818726790174709149d64e31eb7d8138c7e83e0e5067c04dd54baf"
+        },
+        "paper/swegca_vrs_persistent_cognition/REPRODUCIBILITY.md": {
+          "bytes": 7111,
+          "sha256": "0f2f201f130896a50d0b38e7298d7fa3f213c5aad06e74b6c90095504f99a689"
+        },
+        "paper/swegca_vrs_persistent_cognition/SUBMISSION_CHECKLIST.md": {
+          "bytes": 3965,
+          "sha256": "bb416544c67e38d2fdbc954437cd60c8d5e42fbd74e76e198d7f71adaf1398e0"
+        },
+        "paper/swegca_vrs_persistent_cognition/main.tex": {
+          "bytes": 45041,
+          "sha256": "50a9ec51a7ee1f04894c5d3ba079bcee6db090630921659b8770bdaecb6f61f7"
+        },
+        "paper/swegca_vrs_persistent_cognition/references.bib": {
+          "bytes": 6488,
+          "sha256": "c207bc38d19e1553c14384aa0e1cfa0e5bf654ea6088c00fc010b759c334823d"
+        },
+        "reference/LINEAGE.json": {
+          "bytes": 7331,
+          "sha256": "c2c4bfc313832d0717b45a13136a484b426ab5422b401cad6d052cd43a5bd1c0"
+        }
+      }
+    }
+  ]
 }

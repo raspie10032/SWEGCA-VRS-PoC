@@ -1,4 +1,4 @@
-"""Verify the exact paper snapshot and component lineage without models/network."""
+"""Verify current paper bytes and preserved component lineage without models/network."""
 
 from __future__ import annotations
 

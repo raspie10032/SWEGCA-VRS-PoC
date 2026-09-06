@@ -1,0 +1,160 @@
+--- a/paper/swegca_vrs_persistent_cognition/main.tex
++++ b/paper/swegca_vrs_persistent_cognition/main.tex
+@@ -17,7 +17,7 @@
+   linkcolor=blue!55!black,
+   citecolor=blue!55!black,
+   urlcolor=blue!55!black,
+-  pdftitle={Persistent Cognition beyond Context Windows: Evidence-Gated Experience and Verified Reinforcement Synapses across Context Resets and Replaceable Reasoning Models},
++  pdftitle={Evidence-Gated Experience and Verified Reinforcement Synapses across Context Resets and Replaceable Reasoning Models},
+   pdfauthor={Dongjun Park}
+ }
+ 
+@@ -29,8 +29,7 @@
+ \newcommand{\no}{\textcolor{red!65!black}{no}}
+ \newcommand{\abstain}{\textsc{abstain}}
+ 
+-\title{Persistent Cognition beyond Context Windows:\\
+-Evidence-Gated Experience and Verified Reinforcement Synapses\\
++\title{Evidence-Gated Experience and Verified Reinforcement Synapses\\
+ across Context Resets and Replaceable Reasoning Models}
+ \author{Dongjun Park\\Independent Researcher}
+ \date{September 2026}
+@@ -39,11 +38,11 @@
+ \maketitle
+ 
+ \begin{abstract}
+-We present a reference implementation of SWEGCA with Verified Reinforcement Synapses in which a main process owns persistent cognitive state, accumulated experience, plastic relations and authority, while replaceable models produce proposals. Persistence beyond context windows means that this state and its provenance outlive a specialist's conversation or process; it does not mean improved long-context benchmark performance or model-independent competence. Within this architecture, we ask whether intervening on VRS changes judgment, independently of whether the change is correct. Memory activation uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion.
+-
+-Separate continuity diagnostics retained provenance-bound refutations in 3/3 requests after an E2B context reset. Replacing E2B with a fixed 135.5M specialist and GPT-5.6 Luna preserved main-owned state and authority boundaries in all six calls on the same three requests; exact verdict retention was 3/6, all from Luna. Five historical episodes remained retrievable from a later full-current snapshot. These observations establish bounded state and lineage continuity, not equal specialist capability, and do not by themselves isolate VRS influence.
+-
+-In a separate three-source runtime diagnostic, current VRS produced one memory-branch decision different from frozen and disabled VRS under identical recalled candidates; two were unchanged. An earlier twelve-source A/B task produced no full-system versus frozen-VRS choice changes. The disabled-VRS branch mechanically prevents promotion, limiting relation-specific interpretation. Two historical 100-source evaluations provide secondary analogy and utility data, not isolated VRS evidence: accuracy was 0.64 in one and 0.60 against a current-evidence baseline of 0.82 in the other. Their non-authoritative hypotheses are not re-evidence-approved judgments. We retain these task-specific results separately and distinguish original pre-result gates from post-hoc interpretation. The evidence supports an executable persistent-state architecture and a bounded VRS-dependent output path, not general benefit, a population effect, cognitive growth or a finished product.
++We present a reference implementation of SWEGCA with Verified Reinforcement Synapses (VRS). Its ownership contract assigns persistent cognitive state, accumulated experience, plastic relations and authority to a main process, while replaceable models produce proposals. We ask whether intervening on VRS changes the measured output, independently of whether the change is correct. The direct intervention endpoint is a memory-branch decision, not a final main-level semantic commit. Memory activation uses familiarity, recall, replay and re-evidence, with VRS-dependent evidence promotion.
++
++Separate continuity diagnostics retained provenance-bound refutations in 3/3 requests after an E2B context reset. Replacing E2B with a fixed 135.5M specialist and GPT-5.6 Luna retained the recorded main-state pair in all six calls on the same three requests, with refutation or abstention; exact verdict retention was 3/6, all from Luna. Five historical episodes remained retrievable from a later full-current snapshot. These are observations of state retention and task behavior in the tested configurations, not proof of general cognitive continuity, comprehensive safety or equal specialist capability.
++
++In a three-source runtime diagnostic, current VRS produced one memory-branch decision different from frozen and disabled VRS under identical recalled candidates; two were unchanged. An earlier twelve-source A/B task produced no full-system versus frozen-VRS choice changes. The disabled-VRS branch mechanically prevents promotion, limiting relation-specific interpretation. Two historical 100-source evaluations provide secondary analogy and utility data, not isolated VRS evidence: accuracy was 0.64 in one and 0.60 against a current-evidence baseline of 0.82 in the other. Their non-authoritative hypotheses are not re-evidence-approved judgments. We report these task-specific results separately and distinguish original pre-result gates from post-hoc interpretation. This concept-validation study provides an executable reference path and one observed VRS-dependent output difference; it does not establish general benefit, a population effect, cognitive growth or a finished product.
+ \end{abstract}
+ 
+ \section{Introduction}
+@@ -52,7 +51,7 @@
+ 
+ This paper presents \swegca{}+\vrs, implemented in \system, as an architecture for preserving evidence-gated experience outside a specialist's working context and across specialist replacement. Within that architecture, the primary behavioral question is: \emph{Does intervening on VRS change judgment, and at which implemented decision boundary?} Influence is distinct from correctness: a changed wrong prediction, a newly induced abstention and an unchanged decision are all relevant observations. The main process owns the only persistent cognitive state. Models and tools read detached snapshots and return proposals; they do not own identity, durable belief, the world model or permission to act. Context-reset and model-replacement diagnostics test the architecture's persistence claim separately from the VRS intervention diagnostic; none is a requirement that VRS improve accuracy.
+ 
+-In the title, \emph{persistent cognition} refers to the implemented main-owned cognitive state, accumulated experience and relation lineage, not a claim that every cognitive capability survives every replacement. \emph{Beyond context windows} denotes persistence outside the lifetime of a specialist's context, not a context-length scaling result. Reset and replacement results do not establish VRS-specific causality, and a VRS-dependent memory-branch difference does not establish general competence or a final main-level semantic commit.
++Here, \emph{persistent cognitive state} names the main-owned state in the implementation; it is not an empirical claim that cognitive abilities generally persist. The title names the mechanism and the tested context-reset/model-replacement conditions, not a demonstrated context-window breakthrough. Reset and replacement results do not establish VRS-specific causality, and a VRS-dependent memory-branch difference does not establish general competence or a final main-level semantic commit.
+ 
+ This separation matters for two reasons.  First, a model context can be discarded without deleting the experience ledger.  Second, replacing a language specialist need not transfer identity to its replacement: the replacement receives the same sealed request and main-owned state, and its proposal crosses the same gate.  This resembles recent transactional continuity work \cite{he2026continuity}, but our focus is the measured interaction among full-current experience access, a plastic relation layer, current-evidence checking, safe abstention, and model replacement.
+ 
+@@ -74,15 +73,17 @@
+ 
+ RAG combines parametric generation with an explicit non-parametric index \cite{lewis2020rag}.  Generative Agents records observations and synthesizes reflections for multi-day interactive behavior \cite{park2023generative}; MemGPT manages memory tiers to extend usable context across documents and sessions \cite{packer2023memgpt}; and CoALA organizes language agents through modular cognitive-architecture concepts \cite{sumers2024coala}.  MemOS treats memory as a managed resource spanning parametric, activation, and plaintext forms \cite{li2025memos}.  ICAL distills embodied trajectories into retrievable programs of thought \cite{sarch2024ical}.
+ 
+-\swegca{}+\vrs differs in its primary contract.  Retrieval only makes a record a candidate.  A recalled record retains provenance, verification state, contradictions, and observed outcome.  It cannot authorize a persistent update or external action merely because a model selected it.  The normal system also does not use an evaluator-provided memory allowlist: runtime cognition selects related addresses from the full current index.
++Our reference contract treats retrieval as candidate activation. A recalled record retains provenance, verification state, contradictions and observed outcome; selection alone grants no persistent-update or external-action authority. Runtime cognition selects related addresses from the full current index rather than an evaluator-provided memory allowlist. These are the implementation boundaries examined here, not a claim that evidence gating is absent from other memory systems.
+ 
+ \subsection{Belief revision, provenance, and transactions}
+ 
+ Truth-maintenance systems made dependency-directed revision a first-class concern long before LLM agents \cite{doyle1979tms}.  Kumiho connects graph-native agent memory with formal belief-revision semantics \cite{park2026kumiho}.  ChronoMem adds whole-memory versions and semantic rollback \cite{su2026chronomem}; MemLineage propagates provenance constraints through derivations \cite{ouyang2026memlineage}; and provenance-laundering work shows that consolidation can preserve a trigger while erasing the source restrictions that should constrain it \cite{xu2026provenance}.  MemTX separates memory writes from transactional belief commits \cite{li2026memtx}, while AuthMem-Bench measures authority collapse at consolidation boundaries \cite{zhan2026authority}.
+ 
+-Our implementation shares the motivation for explicit lineage and commit discipline.  It adds a system-identity boundary: proposals, remembered episodes, and model outputs are inputs to one main-owned arbitration path.  \vrs{} relations are plastic state but are not truth probabilities.  Promotion and revocation are derived from the current immutable snapshot, and consequential authority remains separately gated.
++Our implementation shares the motivation for explicit lineage and commit discipline. It assigns proposals, remembered episodes and model outputs to one main-owned arbitration path. \vrs{} relations are plastic state but are not truth probabilities. Promotion and revocation are derived from the current immutable snapshot, and consequential authority remains separately gated. The paper does not establish priority or superiority over the cited memory and transaction systems; no matched cross-system evaluation is reported.
+ 
+ \section{Architecture}
++
++This section specifies the reference system's ownership and authority contract. Architectural requirements such as exclusive state ownership, atomic commit and gated authority are distinct from the empirical coverage reported below. The diagnostic receipts and software checks are not an exhaustive security proof or proof of general cognitive capability.
+ 
+ \subsection{State and ownership}
+ 
+@@ -140,7 +141,7 @@
+ 
+ \subsection{Verified Reinforcement Synapses}
+ 
+-A \vrs{} edge records a versioned relation shaped by experience and opportunities for refutation.  Edge strength is not calibrated truth probability.  In the reference contract, a current-snapshot edge with strength at least 1.0 may be promoted to verified experience evidence, but only while that strength and agreement with current observation are maintained.  Recalculation below the threshold revokes promotion without deleting the underlying experience.  Same-proposition conflict causes abstention rather than weighted-residual commitment.
++A \vrs{} edge records a versioned relation shaped by experience and opportunities for refutation. Edge strength is not calibrated truth probability. In the reference contract, strength at least 1.0 automatically promotes an edge to verified experience evidence; recomputation below that threshold revokes promotion without deleting the experience or connection. Promoted experience may support a semantic judgment only when it agrees with current observation, and consequential authority remains separately gated. Same-proposition conflict requires abstention rather than weighted-residual commitment. ``Verified'' is the mechanism's existing name and a contract-defined evidence status, not a guarantee that every promoted relation is factually correct.
+ 
+ \subsection{Memory activation protocol}
+ 
+@@ -152,11 +153,11 @@
+   \item \textbf{Re-evidence}: compare each replay with current provenance-bound evidence and retain support, refutation, conflict, or insufficiency.
+ \end{enumerate}
+ 
+-The four stages bind to one immutable hot snapshot.  A replay receipt records candidates, selected and rejected addresses, revisions, rationale, and rejection evidence.  This makes stale-memory reuse auditable and prevents a model from silently promoting a retrieved sentence.
++The four stages bind to one immutable hot snapshot. A replay receipt records candidates, selected and rejected addresses, revisions, rationale and rejection evidence. These records support audits of stale-memory reuse. Under the authority contract, a model's retrieved text cannot itself authorize promotion; a receipt alone does not prove that every possible bypass has been excluded.
+ 
+ \subsection{Context reset and specialist replacement}
+ 
+-A context reset destroys the specialist conversation, KV cache, process-local state, and temporary caches while preserving $S_t$.  A model swap additionally changes the proposal generator.  Both operations use identical sealed request bytes and the same detached main-owned snapshot.  Continuity means preservation of lineage and governance; it does not guarantee that a weaker replacement can express the same task verdict.
++A context reset destroys the specialist conversation, KV cache, process-local state, and temporary caches while preserving $S_t$. A model swap additionally changes the proposal generator. Both operations use identical sealed request bytes and the same detached main-owned snapshot. The diagnostics check recorded state identity and task behavior under these operations; they do not guarantee that a replacement produces the same verdict. Failure on the strict proposal format is not a general ranking of a model's reasoning ability.
+ 
+ \section{Evaluation Protocol}
+ \label{sec:protocol}
+@@ -193,7 +194,7 @@
+ 
+ The historical evidence frozen for Phase 6 contained five genuinely new source episodes from five source families, five actual outcomes labeled \emph{uncertain}, four direct prior recalls, one falsifiable source-diverse transfer, one refutation correction, and exact retention of 51 earlier episodes.  All six outcome classes remained active through successor \vrs{} states and no connection was removed before whole-experience convergence.  Five unique cues were then checked once against a later full-current hot snapshot; all five returned the preregistered historical episode without lookup I/O.
+ 
+-The uniformly uncertain outcomes are an important limitation.  They are retained as actual outcome labels, not converted to successes.  This phase supports persistence and a recorded longitudinal chain more strongly than it supports calibrated outcome learning.
++The uniformly uncertain outcomes are an important limitation. They are retained as actual outcome labels, not converted to successes. These records document retention and a historical sequence of experience processing; they do not by themselves establish calibrated outcome learning or a general growth effect.
+ 
+ \subsection{Historical 100-source analogy evaluations}
+ 
+@@ -286,7 +287,7 @@
+ 
+ \subsection{Context reset and model replacement}
+ 
+-Table~\ref{tab:continuity} separates state safety from specialist competence.  Context reset retained the three E2B provenance-bound refutations.  After replacement, every request used an identical hash and main pair, and all six ended safely.  Only L reproduced the three refutations; S produced unparsable proposals and the main process abstained.  Thus specialist replacement preserved state and authority boundaries in 6/6, while exact task verdict retention was 3/6.
++Table~\ref{tab:continuity} separates recorded state preservation from specialist task performance. Context reset retained the three E2B provenance-bound refutations. After replacement, all six calls retained their sealed request hashes and the recorded main-state pair and ended in refutation or abstention. Only L reproduced the three refutations; S produced unparsable proposals and the main process abstained. Thus the recorded state checks passed in 6/6 calls, while exact task verdict retention was 3/6. ``Safe'' in the historical diagnostic denotes these fail-closed outcomes under the tested requests, not comprehensive security or safety across actions and inputs.
+ 
+ \begin{table*}[t]
+ \centering
+@@ -369,7 +370,7 @@
+ 
+ We classify this as \textbf{invalid negative evidence}, not a system failure or a pass.  All artifacts were retained, and the consumed sources were permanently excluded from final confirmation.  The repair was developed only on 25 separate sources and required different proposal contents to produce different evidence receipts and retrieval behavior.  A fresh 100-source cohort, disjoint from both the invalid cohort and repair sources, was then frozen before the valid run.
+ 
+-This failure changes the methodological lesson of the paper.  Correct temporal isolation, model execution, and receipt integrity do not guarantee that the intended independent variable reaches cognition.  A memory evaluation must verify source-specific information flow, not merely that a retrieval component ran.  Publishing the invalid run also prevents the repaired 0.64 result from appearing as an unexplained second attempt on the same held-out data.
++This failure illustrates a methodological limitation: temporal isolation, model execution and receipt integrity do not establish that the intended independent variable reaches the measured decision path. A memory evaluation must inspect source-specific information flow, not merely component execution. Reporting the invalid run makes clear that the repaired 0.64 result used a separate cohort rather than a second attempt on the same held-out data; it does not establish isolated VRS influence.
+ 
+ \section{Limitations}
+ 
+@@ -379,7 +380,7 @@
+   \item \textbf{Outcome imbalance.} Phase 7 contained 30 success and 70 failure labels; Phase 9 contained 24 and 76. The original metrics and later reinterpretation are distinguished rather than silently replacing an unfavorable endpoint.
+   \item \textbf{Historical outcome quality.}  The five Phase-6 historical outcomes were all labeled uncertain.  This supports retention of uncertainty but weakens any broad claim about reward-driven learning.
+   \item \textbf{Constructed stale tasks.}  Phase-3 propositions were development diagnostics derived from repository revisions.  They do not establish natural-distribution stale-memory correction.
+-  \item \textbf{Small continuity samples.}  Context-reset and model-swap tests used three requests each.  State-boundary preservation was exact, but task-level generalization requires larger independent cohorts.
++  \item \textbf{Small continuity samples.} Context-reset and model-swap tests reused three requests. Recorded request/state-pair checks matched exactly, but this does not establish task-level generalization or exhaustive authority-boundary enforcement.
+   \item \textbf{Context-lifetime scope.}  The reset diagnostic tests persistence outside a specialist's context, not performance as context length increases. Main-owned state and lineage continuity do not establish arbitrary-session competence or universal cognitive continuity.
+   \item \textbf{Specialist heterogeneity.}  The fixed 135.5M specialist failed strict proposal formatting.  Safe abstention demonstrates fail-closed behavior, not retained competence.
+   \item \textbf{Bounded no-memory arm.}  Removing memory is a causal diagnostic, not a normal \system{} configuration.  Its 0.00 score should not be read as a general baseline for all agents.
+@@ -389,6 +390,7 @@
+   \item \textbf{Intervention scope.} No-VRS mechanically disables promotion. No shuffled-relation specificity, sham-control population effect or positive final-main effect is established. A memory-branch decision is not a semantic commit.
+   \item \textbf{Post-hoc question correction.} Correctness-independent change counts were computed after the original correctness-dependent gate failed. They are descriptive reinterpretation, not new preregistered confirmation.
+   \item \textbf{No unique-cause claim.} VRS, retrieval and re-evidence are not identified as the sole cause of general improvement. The paper supplies a bounded mechanism demonstration, not a finished autonomous product.
++  \item \textbf{Contract versus verification.} Ownership, evidence promotion and consequential-action gates are architectural requirements. The reported receipts and bounded software tests do not prove every implementation path secure or every promoted relation true.
+ \end{enumerate}
+ 
+ \section{Ethics, Licensing, and Publication Boundary}
+@@ -401,21 +403,21 @@
+ 
+ \section{Reproducibility}
+ 
+-Every phase preserved a config, source and code revision, snapshot identifiers, preregistered gates, intermediate receipts, final report, and hashes.  The public package contains manuscript sources, a claim--evidence matrix, a sanitized artifact manifest, and exact validation commands.  Private per-source receipts and raw media remain outside the public package.  Failed and invalid run identifiers remain in the public evidence matrix so that the successful run's lineage is auditable.
++The retained evidence includes configurations, source and code revisions, snapshot identifiers, original gates, intermediate receipts, reports and content hashes, with coverage varying by run. In particular, the M wave discussed above has saved observations but no root completion report. The separate source package contains manuscript sources, a claim--evidence matrix, a sanitized artifact manifest and local verification commands; it does not contain every historical runtime artifact. Private per-source receipts and raw media remain excluded. Failed and invalid run identifiers are retained so that the reported lineage and its gaps remain explicit.
+ 
+ Source checks require frozen-report hashes, resolved citation keys, publication-safety scans, protected historical trees and matching aggregate numbers. The historical Phase-8 manifest describes its original source freeze and must not be presented as validation of this revised draft. The correctness-independent analysis reads saved receipts without new media, models or VRS execution; it cannot substitute for empirical runtime reproduction. Re-execution additionally requires lawful media and model access, supplied by the operator without embedded credentials. Existing experimental evidence is not rerun merely to improve a score.
+ 
+-The host used for paper assembly did not contain a TeX engine at freeze time.  Therefore source-level validation is authoritative in this repository snapshot, while a PDF build is a separate packaging check to be run in an existing TeX environment before submission.  Absence of a local PDF is not reported as a successful PDF build.
++The host used for paper assembly did not contain a TeX engine at freeze time. Local source checks cover byte consistency, syntax-level references and selected claim boundaries; they do not establish scientific validity or PDF correctness. A PDF build and visual inspection remain separate packaging checks before submission. Historical end-to-end runners also require the original resident/model environment; passing offline component tests is not a full empirical replay.
+ 
+ \section{Conclusion}
+ 
+ Persistent agent memory is not merely a larger prompt.  It is a state-governance problem: experience must remain addressable across sessions and models, yet retrieval must not erase provenance or grant itself authority.  \swegca{}+\vrs implements this boundary with one main-owned cognitive state, replaceable proposal specialists, immutable snapshots, a plastic relation layer, and a fixed recall--replay--re-evidence path.
+ 
+-Within the measured continuity diagnostics, all three provenance-bound E2B refutations survived a context reset. Specialist replacement preserved main-owned state and authority boundaries in six calls on those same three requests, while exact verdict retention was three of six: Luna retained all three refutations and the fixed 135.5M specialist produced unparsable proposals followed by main-level abstention. Five historical episodes also remained addressable in a later full-current snapshot. These results support the title's bounded persistence claim for state and lineage outside a specialist's context and across replacement, not equal model competence or improved context-length performance.
++Within the measured continuity diagnostics, all three provenance-bound E2B refutations survived a context reset. All six specialist-replacement calls on those same three requests retained the recorded main-state pair and ended in refutation or abstention. Exact verdict retention was three of six: Luna retained all three refutations, while the fixed 135.5M specialist produced unparsable proposals followed by main-level abstention. Five historical episodes also remained addressable in a later full-current snapshot. These observations concern state retention and task behavior in the tested configurations; they do not establish general cognitive continuity, equal model competence or improved context-length performance.
+ 
+ The direct visual-stability diagnostic showed one VRS-dependent memory-branch change and two unchanged decisions. An earlier A/B task showed twelve unchanged full/frozen choices. These observations concern different tasks and are not pooled. The larger analogy evaluations add secondary behavior and utility evidence, including a negative baseline comparison, but their metadata alone does not establish VRS causality. Their non-authoritative hypotheses must remain distinct from verified semantic judgments.
+ 
+-Together, the architecture and continuity diagnostics establish a bounded implementation of persistent evidence-gated state, while the separate VRS intervention shows that its promotion/re-evidence path can influence a memory-branch output under matched recalled experience. Neither result substitutes for the other. Influence need not be beneficial or universal, and the disabled-promotion control limits relation-specific interpretation. Working reference code, explicit evidence boundaries and retained negative results are the deliverable; general competence and product completeness are not prerequisites. Broader effect estimation, relation-specific controls and final-main generalization remain unestablished rather than silently assumed.
++The paper provides a reference implementation, recorded state-retention diagnostics and one observed VRS-dependent memory-branch difference under matched recalled experience. These are separate findings: state retention is not VRS-specific causal evidence, and the branch difference is not evidence of broad cognitive persistence. Influence need not be beneficial or universal, and the disabled-promotion control limits relation-specific interpretation. Working reference code, explicit evidence boundaries and retained negative results are the deliverable; general competence and product completeness are not prerequisites. Broader effect estimation, relation-specific controls and final-main generalization remain unestablished rather than silently assumed.
+ 
+ \bibliographystyle{abbrv}
+ \bibliography{references}
